@@ -19,3 +19,15 @@ bool BitmapImage::load(std::string name) {
 BitmapImage::~BitmapImage() {
     delete[] buffer;
 }
+
+bool BitmapImage::save(std::string name) {
+    std::string fileExt=name.substr(name.find_last_of(".")+1);
+    return false;
+}
+
+void BitmapImage::resize(std::string name) {
+    this->width=width;
+    this->height=height;
+    //resize the bipmap
+
+}
