@@ -25,8 +25,11 @@ bool BitmapImage::save(std::string name) {
     return false;
 }
 
-void BitmapImage::resize(std::string name) {
+void BitmapImage::resize(int width,int height) {
+    if(width>0)
+
     this->width=width;
+   if(height>0)
     this->height=height;
     //resize the bipmap
 
