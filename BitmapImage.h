@@ -11,7 +11,7 @@ public:
 
     bool load(std::string name);
     bool save(std::string name);
-    void resize(std::string name);
+    void resize(int width,int height);
 private:
     int width, height;
     char* buffer;
